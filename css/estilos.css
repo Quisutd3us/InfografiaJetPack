@@ -1,0 +1,16 @@
+
+
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;   
+}
+
+body{
+    background-color: #3c3c3c;
+}
+
+#maqueta{
+    background-image: url("../img/temps/maqueta10001.jpg");
+    background-repeat: no-repeat;
+
+}
