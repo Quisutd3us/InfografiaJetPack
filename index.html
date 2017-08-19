@@ -1,89 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vamos a Marte</title>
     <!-- mis fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Titillium+Web" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
     <!-- mis estilos -->
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- NoUislider -->
+    <link href="css/nouislider.min.css" rel="stylesheet">
     <!-- libreria Jquery     -->
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Mis Scripts -->
-    <script src="js/misScripts.js"></script>
+
+
 </head>
 
 <body>
 
-    <div id="maqueta"></div>
-    <div id="main_container">
-        <div id="contents_container">
-            <ul class="contents bloque1">
-                <li class="bloque1">
-                    <div class="graph_block">
-                        <img id="fase1_cohete" src="img/cohete.png" alt="">
-                        <div class="flecha">
-                            <img src="img/flecha.png" alt="" class="flecha_top">
-                            <div class="flecha_bottom"></div>
-                        </div>
-                    </div>
-                    <div class="info_block">
-                        <h1>Fase Salida</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit
-                            vitae tempora ducimus provident cum atque placeat itaque dolore? Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit vitae tempora ducimus provident
-                            cum atque placeat itaque dolore?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
-                            ad consequuntur et iste suscipit vitae tempora ducimus provident cum atque placeat itaque dolore?Lorem
-                            ipsum dolor sit, amet consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit vitae
-                            tempora ducimus provident cum atque placeat itaque dolore?Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Illo, ad consequuntur et iste suscipit vitae tempora ducimus provident cum
-                            atque placeat itaque dolore?</p>
-                    </div>
-                </li>
-                <li class="bloque2">
-                    <div class="graph_block">
-                        <img class="fase2_curva" src="img/curva.png" alt="">
-                        <img class="fase2_tierra" src="img/tierra_peq.png" alt="">
-                        <img class="fase2_marte" src="img/marte.png" alt="">
-                        <img class="fase2_cohete" src="img/cohete2.png" alt="">
-                    </div>
-                    <div class="info_block">
-                        <h1>Transito</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit
-                            vitae tempora ducimus provident cum atque placeat itaque dolore? Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit vitae tempora ducimus provident
-                            cum atque placeat itaque dolore?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
-                            ad consequuntur et iste suscipit vitae tempora ducimus provident cum atque placeat itaque dolore?Lorem
-                            ipsum dolor sit, amet consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit vitae
-                            tempora ducimus provident cum atque placeat itaque dolore?Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Illo, ad consequuntur et iste suscipit vitae tempora ducimus provident cum
-                            atque placeat itaque dolore?</p>
-                    </div>
-                </li>
-                <li class="bloque3">
-                    <div class="graph_block">
-                        <img class="fase3_marte" src="img/marte_fase3.png" alt="">
-                            <img class="fase3_sonda" src="img/sonda.png" alt="">
-                    </div>
-                    <div class="info_block">
-                        <h1>Fase Orbital</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit
-                            vitae tempora ducimus provident cum atque placeat itaque dolore? Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit vitae tempora ducimus provident
-                            cum atque placeat itaque dolore?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
-                            ad consequuntur et iste suscipit vitae tempora ducimus provident cum atque placeat itaque dolore?Lorem
-                            ipsum dolor sit, amet consectetur adipisicing elit. Illo, ad consequuntur et iste suscipit vitae
-                            tempora ducimus provident cum atque placeat itaque dolore?Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Illo, ad consequuntur et iste suscipit vitae tempora ducimus provident cum
-                            atque placeat itaque dolore?</p>
-                    </div>
-                </li>
-            </ul>
+    <div class="container-fluid">
+        <div class="row containerGraficos">
+            <div class=" col-12 col-md-8 ">
+                <div class="containerPrincipal"></div>
+            </div>
+            <div class=" col-12 col-md-4">
+                <div class=" donut"></div>
+                <div class=" pie"></div>
+            </div>
+        </div>
+        <div class="row containerControles">
+            <div class=" col-12">
+                <div  class=" containerSlider">
+                    <h2>Parametro 1</h2>
+                    <div id="param1" class="slider"></div>
+                    <p class="valor"></p>
+                </div>
+                <div  class=" containerSlider">
+                    <h2>Parametro 2</h2>
+                    <div id="param2" class="slider"></div>
+                    <p class="valor"></p>
+                </div>
+                <div  class=" containerSlider">
+                    <h2>Parametro 3</h2>
+                    <div id="param3" class="slider"></div>
+                    <p class="valor"></p>
+                </div>
+                <div  class=" containerSlider">
+                    <h2>Parametro 4</h2>
+                    <div id="param4" class="slider"></div>
+                    <p class="valor"></p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <!-- bootstrap scripts -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <!-- Script NoUiSlier -->
+    <script src="js/nouislider.min.js"></script>
+
+    <!-- libreria Highcharts -->
+    <script src="js/highcharts.js"></script>
+    
+    <!-- Mis Charts -->
+    <script src="js/misCharts.js"></script>
+    
+    <!-- Mis Scripts -->
+    <script src="js/misScripts.js"></script>
 </body>
 
 </html>

@@ -1,16 +1,59 @@
+.bordes {
+  border: solid 1px red;
+  background-color: white; }
 
+.bordes1 {
+  border: solid 1px blue;
+  background-color: white; }
 
-html, body{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;   
-}
+.bordes2 {
+  border: solid 1px lime;
+  background-color: white; }
 
-body{
-    background-color: #3c3c3c;
-}
+.bordes3 {
+  border: solid 1px purple;
+  background-color: white; }
 
-#maqueta{
-    background-image: url("../img/temps/maqueta10001.jpg");
-    background-repeat: no-repeat;
+.containerGraficos {
+  height: 25rem; }
+  .containerGraficos .donut {
+    height: 50%; }
+  .containerGraficos .pie {
+    height: 50%; }
 
-}
+.containerGraficos div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.containerControles {
+  text-align: center;
+  height: 15rem; }
+
+.containerControles .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.containerControles .containerSlider {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/*# sourceMappingURL=estilos.css.map */
